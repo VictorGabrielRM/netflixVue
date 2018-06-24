@@ -1,18 +1,16 @@
 <template>
-  <div id="app">
-    <img src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-  </div>
+  <h2>Meu componente! Projeto: {{ nomeProjeto }}</h2>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
 
 export default {
   name: 'app',
-  components: {
-    HelloWorld
-  }
+  data () {
+    return {
+      nomeProjeto: 'Netflix com vue'
+    }
+  },
 }
 </script>
 
